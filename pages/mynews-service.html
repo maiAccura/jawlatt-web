@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jawlatt</title> 
+        <!-- *************** StyleSheets *************** -->
+        <!--  Bootstrap 5 RTL style  -->
+        <link href="../css/bootstrap.rtl.min.css" rel="stylesheet">
+        <!--  FontAwesome 6  -->
+        <script src="https://kit.fontawesome.com/2d8796d79a.js" crossorigin="anonymous"></script>
+        <!--  Custom Style  -->
+        <link href="../css/style.css" rel="stylesheet">
+        <!--  Responsive Style  -->
+        <link href="../css/responsive.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="card">
+            <!-- head date login-->
+            <div class="head">
+                <div class="container">
+                    <p class="date">الأربعاء 30 ذو القعدة 1443 هـ - 29 يونيو 2022
+                    </p>
+                    <div class="connect">
+                        <div class="social">
+                            <img src="../assets/icons/messenger.svg" width="20" alt="messenger">
+                            <img src="../assets/icons/twitter.svg" width="20" alt="twitter">
+                            <img src="../assets/icons/fb.svg" width="20" alt="facebook">
+                            <img src="../assets/icons/whatsapp.svg" width="20" alt="whatsapp">
+
+                        </div>
+                        <!-- Button trigger modal SignIn-->
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#signIn">
+                            <img src="../assets/icons/user.svg" width="20" alt="user">
+                            تسجيل الدخول
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Header logo shopping-->
+            <header>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="../assets/images/logo-header.png" alt="logo" class="logo">
+                            </div>
+                            <div class="col-md-8">
+                                <a href="#"><img src="../assets/images/ad1.png" alt="advertise 1" class="img-fluid"></a>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="search">
+                                    <div class="fa fa-search search-icon"></div>
+                                    <button class="btn btn-default">تسوق<img src="../assets/icons/shopping.svg" width="20" alt="shop"> </button>
+                                </div>
+                                
+                            </div>
+    
+                        </div>
+                    </div>
+            </header>
+            <!--Search input open-->
+            <div class="container">
+                <form class="row g-3 search-part disp">
+                    <div class="col-11 search-input">
+                        <input type="text" class="form-control" id="search" placeholder="كلمات البحث ...">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-3">بحث</button>
+                    </div>
+                </form>
+            </div>
+            <!--main Navbar -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><img src="../assets/images/logo-header.png" alt="logo" class="logo img-fluid"></a>
+                    <img src="../assets/icons/search.svg" class="search" width="20" alt="search">
+                    <!-- Button trigger modal SignIn-->
+                    <button type="button" class="btn btn-link btn-sign" data-bs-toggle="modal" data-bs-target="#signIn">
+                        <svg version="1.1" width="50" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path fill="#131415" d="M311.5,184.4c0,36.1-29.2,65.3-65.3,65.3s-65.3-29.2-65.3-65.3s29.2-65.3,65.3-65.3S311.5,148.4,311.5,184.4z M245,0
+                                        C109.9,0,0,109.9,0,245s109.9,245,245,245s245-109.9,245-245S380.1,0,245,0z M357.3,404.7c-8.2-65.7-35.2-133-111.1-133
+                                        c-76.5,0-103.3,68.3-111.3,134.5C83.5,371,49.7,311.9,49.7,245c0-107.7,87.6-195.3,195.3-195.3S440.3,137.3,440.3,245
+                                        C440.3,310.9,407.5,369.3,357.3,404.7z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <form class="row g-3  d-lg-none">
+                            <div class="input-group mb-3">
+                                <button class="btn btn-outline-secondary" type="button" id="button-addon1"><i class="fa fa-search"></i></button>
+                                <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                            </div>
+                        </form>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">الأخبار</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">رياضة</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">قضايا</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">منوعات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">صحة</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">فن</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">تكنولوجيا</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">فيديو</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">طعام</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">إقتصاد</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">طعام و شراب</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                لايف استايل
+                                </a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">المراة</a></li>
+                                <li><a class="dropdown-item" href="#">الرجل </a></li>
+                                <li><a class="dropdown-item" href="#">الصحة</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- message -->
+            <div class="container">
+                <div class="news-message">
+                    <div class="news-message-head row">
+                        <div class="card mb-3 col-md-6  col-12">
+                            <div class="row">
+                                <div class="col-md-4 col-6">
+                                    <img src="../assets/images/Rectangle.jpg" class="img-fluid rounded-circle my-3" alt="...">
+                                </div>
+                                <div class="col-md-8 col-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">مرحبا أحمد</h5>
+                                        <button class="btn btn-default">خروج</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-horizontal no-before col-md-6 col-12">
+                            <li class="list-group-item">
+                                <a href="#" class="active">
+                                    <i class="fa-solid fa-bell"></i>خدمة الرسائل
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="mynews-favourite.html" >
+                                    <i class="fa-solid fa-newspaper"></i>أخبار مفضلة
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="news-message-content">
+                        <h4><i class="fa-solid fa-envelope-open-text"></i>خدمة الرسائل</h4>
+                        <span>تابع أخبارك المفضلة وقت حدوثها، مع خدمة جولات الإخبارية</span>
+                        <h5>للإشتراك في خدمة الرسائل علي البريد الإلكتروني</h5>
+                        <form class="row g-3">
+                            <div class="col-3">
+                                <label for="staticEmail2" class="visually-hidden">للاشتراك</label>
+                                <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="للاشتراك">
+
+                            </div>
+                            <div class="col-6">
+                                <label for="email3" class="visually-hidden">Password</label>
+                                <input type="email" class="form-control" id="email3" placeholder="البريد الالكتروني">
+                            </div>
+                            <div class="col-3">
+                                <button type="submit" class="btn btn-default mb-3 w-100">اشترك </button>
+                            </div>
+                        </form>
+                        <h5>للإشتراك في خدمة الرسائل علي الوتساب</h5>
+                        <form class="row g-3">
+                            <div class="col-3">
+                                <label for="staticEmail" class="visually-hidden">للاشتراك</label>
+                                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="للاشتراك">
+
+                            </div>
+                            <div class="col-6">
+                                <label for="telephone" class="visually-hidden">Password</label>
+                                <input type="text" class="form-control" id="telephone" placeholder="رقم الجوال">
+                            </div>
+                            <div class="col-3">
+                                <button type="submit" class="btn btn-default mb-3 w-100">اشترك </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="fav-news">
+                        <h4><i class="fa-solid fa-newspaper"></i>إختر أخبارك المفضلة</h4>
+                        <span>أختر أخبارك المفضلة بين أكثر من ١٢٠ صحيفة إلكترونية</span>
+                        <div class="row my-5">
+                            <div class="col-lg-3 col-md-6">
+                                <h5>الاخبار</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                                    <label class="form-check-label" for="flexCheckDefault1">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                                    <label class="form-check-label" for="flexCheckDefault2">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                                    <label class="form-check-label" for="flexCheckDefault3">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+                                    <label class="form-check-label" for="flexCheckDefault4">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
+                                    <label class="form-check-label" for="flexCheckDefault5">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6">
+                                    <label class="form-check-label" for="flexCheckDefault6">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault7">
+                                    <label class="form-check-label" for="flexCheckDefault7">أخبار العالم</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <h5>مال و أعمال</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault8">
+                                    <label class="form-check-label" for="flexCheckDefault8">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault9">
+                                    <label class="form-check-label" for="flexCheckDefault9">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault10">
+                                    <label class="form-check-label" for="flexCheckDefault10">أخبار العالم</label>
+                                </div>
+                                <h5>ترفيه</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault11">
+                                    <label class="form-check-label" for="flexCheckDefault11">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault12">
+                                    <label class="form-check-label" for="flexCheckDefault12">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
+                                    <label class="form-check-label" for="flexCheckDefault13">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault14">
+                                    <label class="form-check-label" for="flexCheckDefault14">أخبار العالم</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <h5> منوعات</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault15">
+                                    <label class="form-check-label" for="flexCheckDefault15">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault16">
+                                    <label class="form-check-label" for="flexCheckDefault16">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault17">
+                                    <label class="form-check-label" for="flexCheckDefault17">أخبار العالم</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <h5>مصادر</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault18">
+                                    <label class="form-check-label" for="flexCheckDefault18">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault19">
+                                    <label class="form-check-label" for="flexCheckDefault19">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault20">
+                                    <label class="form-check-label" for="flexCheckDefault20">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault21">
+                                    <label class="form-check-label" for="flexCheckDefault21">أخبار العالم</label>
+                                </div>
+                            </div>
+                        </div>                        
+                        <button type="button" class="btn btn-dark btn-lg px-5">تأكيد </button>
+                        <button type="button" class="btn btn-default btn-lg px-5">إلغاء </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="mainFooter">
+                    <div class="row">
+                        <div class="col-12 col-lg-3 my-md-3">
+                                <img src="../assets/images/logo-footer.png" alt="white logo" width="100">
+                                <p>مؤسسة عربية يومية تصدر في السعودية  وتقدم أحدث الأخبار من المصادر المتعددة مؤسسة عربية يومية تصدر في السعودية  وتقدم أحدث الأخبار من المصادر المتعددة.
+                                </p>
+                                <div class="appStore  d-none  d-lg-block">
+                                    <a href="#"><img src="../assets/images/app-store.png" width="100" alt="google"></a>
+                                    <a href="#"><img src="../assets/images/google-app.png" width="100" alt="apple"></a>
+                                </div>
+                        </div>
+                        <div class="col-12 col-lg-5 my-md-3">
+                            <nav>
+                                <div >
+                                    <h5>الأخبار</h5>
+                                    <ul class="list-unstyled">
+                                        <li>أخبار العالم</li>
+                                        <li>الشرق الإوسط</li>
+                                        <li>أعمال</li>
+                                        <li>ترفية</li>
+                                        <li>علوم</li>
+                                        <li>تكنولوجيا</li>
+                                        <li>صحة</li>
+                                        <li>رياضة</li>
+                                        <li>موضة</li>
+                                        <li>منوعات</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h5>مال و أعمال</h5>
+                                    <ul class="list-unstyled">
+                                        <li> عقارات</li>
+                                        <li> إستثمارات</li>
+                                        <li>أسواق</li>
+                                    </ul>
+                                        <h5>الترفيه</h5>
+                                        <ul class="list-unstyled">
+                                        <li>أفلام</li>
+                                        <li>كتب</li>
+                                        <li>ألعاب</li>
+                                        <li>فيديو</li>
+                                        <li>موسيقي</li>
+                                    </ul>
+                                </div>
+                                <div >
+                                    <h5>منوعات</h5>
+                                    <ul class="list-unstyled">
+                                        <li>تكنولوجيا</li>
+                                        <li>علوم</li>
+                                        <li>فنون</li>
+                                        <li>ثقافة</li>
+                                        <li>أعمال</li>
+                                        <li>سوشيال</li>
+                                    </ul>
+                                </div>
+                                
+                            </nav>
+                        </div>
+                        <div class="col-12 col-lg-4 my-md-3">
+                            <article>
+                                <h5>النشرة البريدية</h5>
+                                <p>قم بالتسجيل في نشرتنا البريدية للحصول على أخر الاخبار يومياً علي إيميلك
+                                </p>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="بريدك الألكتروني" aria-label="Example text with button addon" aria-describedby="button-addon2">
+                                    <button class="btn btn-outline-secondary btn-default" type="button" id="button-addon2">تسجيل</button>
+                                </div>
+                                <div class="appStore d-lg-none">
+                                    <a href="#"><img src="../assets/images/app-store.png" width="200" alt="google"></a>
+                                    <a href="#"><img src="../assets/images/google-app.png" width="200" alt="apple"></a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                
+                <hr/>
+                <div class="copyRight">
+                    <p>جميع الحقوق محفوظة © 2021 بوابة جولات الإلكترونية
+                    </p>
+                    <nav class="d-none d-lg-block">
+                        <ul class="list-unstyled">
+                            <li>شروط الاستخدام   |   سياسة الخصوصية  </li>
+                            <li>    أعلن في الموقع الالكتروني </li>
+                            <li>إتصل بنا</li>
+                        </ul>
+
+                    </nav>
+
+                </div>
+            </div>
+            
+        </footer>
+        
+        <!-- *************** Modals ***************-->
+        <!-- Modal SignIn-->
+        <div class="modal fade" id="signIn" tabindex="-1" aria-labelledby="signInLabel" aria-hidden="true">
+            <div class="modal-dialog container">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h5 class="modal-title text-center" id="signInLabel">تسجيل الدخول</h5>
+                        <p class="modal-valid text-center"> رسائل التنبيه</p>
+                        <form>
+                            <div class="mb-3">
+                                <label for="emailSignin" class="form-label">إسم المستخدم أو الإيميل</label>
+                                <input type="email" class="form-control" id="emailSignin">
+                            </div>
+                            <div class="mb-3">
+                                <label for="passwordSignin" class="form-label">كلمة المرور </label>
+                                <input type="password" class="form-control" id="passwordSignin">
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-default">دخول</button>
+                            </div>
+                        </form>
+                        <div class="rem">
+                            <a data-bs-toggle="modal" data-bs-target="#rememberPassword">نسيت كلمة المرور؟</a>
+                            <a data-bs-toggle="modal" data-bs-target="#register">تسجيل</a>
+                        </div>
+                        
+                    </div>
+                    <div class="modal-footer text-center">
+                        <div class="signWithFb">
+                            <a href="#">تسجيل دخول ب <i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal Register -->
+        <div class="modal fade" id="register" tabindex="-1" aria-labelledby="registerLabel" aria-hidden="true">
+            <div class="modal-dialog container">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h5 class="modal-title text-center" id="registerLabel">تسجيل الدخول</h5>
+                        <p class="modal-valid text-center"> رسائل التنبيه</p>
+                        <form>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="firstName" class="form-label">الإسم الأول <span>*</span></label>
+                                        <input type="text" class="form-control" id="firstName">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="lastName" class="form-label">الإسم الأخير <span>*</span></label>
+                                        <input type="text" class="form-control" id="lastName">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="emailRegister" class="form-label">البريد الألكتروني <span>*</span></label>
+                                <input type="email" class="form-control" id="emailRegister">
+                            </div>
+                            <div class="mb-3">
+                                <label for="passwordRegister" class="form-label">إختر كلمة المرور <span>*</span></label>
+                                <input type="password" class="form-control" id="passwordRegister">
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="conditionService">
+                                <label class="form-check-label" for="conditionService">
+                                    أوافق علي <a href="#">الشروط و الأحكام</a>
+                                </label>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-default">تسجيل</button>
+                            </div>
+                        </form>
+                        <div class="rem">
+                            <a data-bs-toggle="modal" data-bs-target="#signIn">لديك حساب بالفعل؟<span>سجل</span></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal Remember Password-->
+        <div class="modal fade" id="rememberPassword" tabindex="-1" aria-labelledby="rememberPasswordLabel" aria-hidden="true">
+            <div class="modal-dialog container">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h5 class="modal-title text-center" id="rememberPasswordLabel">نسيت كلمة السر</h5>
+                        <form>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="email2" placeholder="البريد الإلكتروني">
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button type="button" class="btn btn-default" data-bs-toggle="modal" data-bs-target="#checkEmail">أرسل</button>
+                            </div>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal check Email Message-->
+        <div class="modal fade" id="checkEmail" tabindex="-1" aria-labelledby="checkEmailLabel" aria-hidden="true">
+            <div class="modal-dialog container">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <h5 class="modal-title text-center" id="checkEmailLabel">نجحت !</h5>
+                        <p>من فضلك قم بتفقد بريدك الالكتروني <br>
+                        لقد أرسلنا لك رسالة إعادة تعيين كلمة المرور</p>
+                        
+                            <div class="d-grid gap-2">
+                                <button type="button" class="btn btn-default" data-bs-toggle="modal" data-bs-target="#resetPassword">  رجوع </button>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal Reset Password-->
+        <div class="modal fade" id="resetPassword" tabindex="-1" aria-labelledby="resetPasswordLabel" aria-hidden="true">
+            <div class="modal-dialog container">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h5 class="modal-title text-center" id="resetPasswordLabel">نسيت كلمة السر</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="passwordReset" class="form-label"> كلمة المرور الجديدة</label>
+                                <input type="password" class="form-control" id="passwordReset">
+                            </div>
+                            <div class="mb-3">
+                                <label for="confirmPassword" class="form-label">إعادة تعيين كلمة المرور </label>
+                                <input type="password" class="form-control" id="confirmPassword">
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button type="button" class="btn btn-default" data-bs-toggle="modal" data-bs-target="#successMsg">إعادة تعيين كلمة المرور</button>
+                            </div>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal Reset Password success Message-->
+        <div class="modal fade" id="successMsg" tabindex="-1" aria-labelledby="successMsgLabel" aria-hidden="true">
+            <div class="modal-dialog container">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <h5 class="modal-title text-center" id="successMsgLabel">نجحت !</h5>
+                        <p>تم إعادة تعيين كلمةالمرور بنجاح</p>
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-default">  رجوع </button>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- *************** Scripts ***************-->
+        <!-- Bootstrap 5 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+
+        <script src="../js/script.js"></script>
+    </body>
+</html>

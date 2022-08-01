@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jawlatt</title> 
+        <!-- *************** StyleSheets *************** -->
+        <!--  Bootstrap 5 RTL style  -->
+        <link href="../css/bootstrap.rtl.min.css" rel="stylesheet">
+        <!--  FontAwesome 6  -->
+        <script src="https://kit.fontawesome.com/2d8796d79a.js" crossorigin="anonymous"></script>
+        <!--  Custom Style  -->
+        <link href="../css/style.css" rel="stylesheet">
+        <!--  Responsive Style  -->
+        <link href="../css/responsive.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Button trigger modal favourite news-->
+        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#fav-news">
+            أخبارك المفضلة
+        </button>
+        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#discover-more">
+            أكتشف المزيد
+        </button>
+        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#share">
+            شارك
+        </button>
+        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#cookies">
+            cookies
+        </button>
+        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#email">
+            قائمة بريدية
+        </button>
+        <button type="button" class="btn btn-primary" id="liveToastBtn">محتوي جديد</button>
+
+        <!--Favourite news Modal-->
+        <div class="modal fade" id="fav-news" tabindex="-1" aria-labelledby="favNewsLabel" aria-hidden="true">
+            <div class="modal-dialog container">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <span><i class="fa-solid fa-bell fa-xl"></i></span>
+                        <h5 class="modal-title text-center my-3" id="favNewsLabel">تابع أخبارك المفضلة</h5>
+                        <p>يمكنك الآن متابعة أخبارك المفضلة بتفعيل الإشعارات المجانية
+                            لمتابعة آخر وأهم الأخبار
+                        </p>
+                        <div class="d-grid gap-2">
+                            <button type="button" class="btn btn-primary btn-default" data-bs-toggle="modal" data-bs-target="#favNews-setting">ضبط الأعدادات </button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Favourite news setting Modal-->
+        <div class="modal modal-lg fade" id="favNews-setting" tabindex="-1" aria-labelledby="favNewsSettingLabel" aria-hidden="true">
+            <div class="modal-dialog container">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <h5 class="modal-title" id="favNewsSettingLabel">إختر أخبارك المفضلة</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body ">
+                        <div class="row my-5">
+                            <div class="col-lg-3 col-md-6">
+                                <h5>الاخبار</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                                    <label class="form-check-label" for="flexCheckDefault1">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                                    <label class="form-check-label" for="flexCheckDefault2">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                                    <label class="form-check-label" for="flexCheckDefault3">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+                                    <label class="form-check-label" for="flexCheckDefault4">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
+                                    <label class="form-check-label" for="flexCheckDefault5">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6">
+                                    <label class="form-check-label" for="flexCheckDefault6">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault7">
+                                    <label class="form-check-label" for="flexCheckDefault7">أخبار العالم</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <h5>مال و أعمال</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault8">
+                                    <label class="form-check-label" for="flexCheckDefault8">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault9">
+                                    <label class="form-check-label" for="flexCheckDefault9">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault10">
+                                    <label class="form-check-label" for="flexCheckDefault10">أخبار العالم</label>
+                                </div>
+                                <h5>ترفيه</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault11">
+                                    <label class="form-check-label" for="flexCheckDefault11">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault12">
+                                    <label class="form-check-label" for="flexCheckDefault12">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
+                                    <label class="form-check-label" for="flexCheckDefault13">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault14">
+                                    <label class="form-check-label" for="flexCheckDefault14">أخبار العالم</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <h5> منوعات</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault15">
+                                    <label class="form-check-label" for="flexCheckDefault15">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault16">
+                                    <label class="form-check-label" for="flexCheckDefault16">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault17">
+                                    <label class="form-check-label" for="flexCheckDefault17">أخبار العالم</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <h5>مصادر</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault18">
+                                    <label class="form-check-label" for="flexCheckDefault18">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault19">
+                                    <label class="form-check-label" for="flexCheckDefault19">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault20">
+                                    <label class="form-check-label" for="flexCheckDefault20">أخبار العالم</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault21">
+                                    <label class="form-check-label" for="flexCheckDefault21">أخبار العالم</label>
+                                </div>
+                            </div>
+                        </div>                         
+
+                    </div>
+                    <div class="modal-footer">
+                        <div >
+                            <button type="button" class="btn btn-dark btn-lg px-5">تأكيد </button>
+                            <button type="button" class="btn btn-default btn-lg px-5" data-bs-dismiss="modal">إلغاء </button>
+                        </div>
+                        
+                        <div class="form-check form-switch">
+                            <label class="form-check-label" for="flexSwitchCheckChecked">
+                                <i class="fa-solid fa-bell fa-xl"></i>
+                                الأخبار العاجلة
+                            </label>
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Discover More Modal-->
+        <div class="modal fade" id="discover-more" tabindex="-1" aria-labelledby="discoverMoreLabel" aria-hidden="true">
+            <div class="modal-dialog container">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <h5 class="modal-title" id="discoverMoreLabel">  إكتشف المزيد</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body ">
+                        <div class="news-topic my-2 pb-2">
+                            <div class="card">
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <img src="../assets/images/Rectangle.jpg" class="img-fluid" alt="...">
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="card-body">
+                                            <p class="card-text">السعودية تعلن تجديد رخصة العمل كل 3 أشهر بدلا من عام..
+                                            </p>
+                                            <ul class="list-group list-group-horizontal small-font">
+                                                <li class="list-group-item">المدينة</li>
+                                                <li class="list-group-item">13/02/2021</li>
+                                                <li class="list-group-item"><i class="fa-solid fa-bookmark"></i></li>
+                                                <li class="list-group-item"><i class="fa-solid fa-arrow-up-from-bracket"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--share Modal-->
+        <div class="modal fade" id="share" tabindex="-1" aria-labelledby="shareLabel" aria-hidden="true">
+            <div class="modal-dialog container">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <h5 class="modal-title" id="shareLabel">  إكتشف المزيد</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body ">
+                        <div class="news-topic my-2 pb-2">
+                            <div class="card">
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <img src="../assets/images/Rectangle.jpg" class="img-fluid" alt="...">
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="card-body">
+                                            <p class="card-text">السعودية تعلن تجديد رخصة العمل كل 3 أشهر بدلا من عام..
+                                            </p>
+                                            <ul class="list-group list-group-horizontal small-font">
+                                                <li class="list-group-item">المدينة</li>
+                                                <li class="list-group-item">13/02/2021</li>
+                                                <li class="list-group-item"><i class="fa-solid fa-bookmark"></i></li>
+                                                <li class="list-group-item"><i class="fa-solid fa-arrow-up-from-bracket"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2 my-2">
+                            <button type="button" class="btn btn-primary tw-color"> مشاركة علي تويتر<i class="fa-brands fa-twitter"></i></button>
+                        </div>
+                        <div class="d-grid gap-2 my-2">
+                            <button type="button" class="btn btn-primary fb-color"> مشاركة علي الفيسبوك <i class="fa-brands fa-facebook-f"></i></button>
+                        </div>
+                        <div class="d-grid gap-2 my-2">
+                            <button type="button" class="btn btn-secondary"  data-bs-dismiss="modal" aria-label="Close"> إلغاء </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--cookies Modal-->
+        <div class="modal modal-lg fade" id="cookies" tabindex="-1" aria-labelledby="cookiesLabel" aria-hidden="true">
+            <div class="modal-dialog container">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <h5 class="modal-title" id="cookiesLabel">   هذا الموقع يستخدم معمل تعريف ارتباط cookies</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>لمزيد من المعلومات . يرجي قراءة سياسة الخصوصية</p>
+                        <button type="button" class="btn btn-default"  data-bs-dismiss="modal" aria-label="Close"> اوافق </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Favourite news Modal-->
+        <div class="modal fade" id="email" tabindex="-1" aria-labelledby="emailLabel" aria-hidden="true">
+            <div class="modal-dialog container">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <span><i class="fa-solid fa-envelope-open-text fa-xl"></i></span>
+                        <h5 class="modal-title text-center my-3" id="emailLabel">إنضم إلى قائمتنا البريدية  </h5>
+                        <p>للإشتراك في النشرة البريدية، قم بإدخال إيميلك بطريقة صحيحة
+                        </p>
+                        <input class="form-control my-2" type="email" placeholder="البريد الالكتروني" aria-label="default input example">
+                            <button type="button" class="btn btn-primary btn-default px-5">إشترك  </button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Reload Modal-->
+        <div class="toast align-items-center text-bg-primary position-absolute bottom-0 start-0 w-50" id="liveToast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex ">
+                <div class="toast-body">
+                محتوي جديد متاح لك. 
+                <a href="#">إضغط هنا لعمل إعادة تحميل الصفحة</a>     
+                </div>
+                <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+
+        
+        
+        <!-- *************** Scripts ***************-->
+        <!-- Bootstrap 5 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/script.js"></script>
+    </body>
+</html>
